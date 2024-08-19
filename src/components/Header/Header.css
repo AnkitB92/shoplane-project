@@ -1,0 +1,167 @@
+.hero-logo {
+  font-size: 1.8em;
+  color: #00B0F0;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-buttons .btn-group ul a,
+.nav-buttons .btn-group ul button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-buttons .btn-group ul a:hover {
+  background-color: #f2f2f2;
+}
+
+.nav-buttons .btn-group ul a:active {
+  background-color: #d9d9d9;
+}
+
+.account-btn {
+  text-align: start;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 2px;
+  padding: 6px 10px;
+  background-color: white;
+  box-shadow: 0 0 3px 2px #e6e6e6;
+  gap: 10px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.account-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.account-btn:active {
+  background-color: #d9d9d9;
+}
+
+.account-btn>div {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.account-btn>div>p {
+  color: grey;
+}
+
+.account-btn>svg {
+  font-size: 2em;
+}
+
+.account-btn>svg:first-of-type {
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.cart-link svg {
+  font-size: 2.5em;
+}
+
+.cart-link:hover {
+  color: #595959;
+}
+
+.cart-count {
+  position: absolute;
+  top: -3px;
+  right: -8px;
+  font-size: 10px;
+  text-align: center;
+  align-content: center;
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  border-radius: 15px;
+  color: white;
+  font-weight: 500;
+}
+
+.cart-link:hover>.cart-count {
+  background-color: #cc4400;
+}
+
+@media screen and (max-width: 500px) {
+
+  .hero-logo {
+    font-size: 1.35em;
+    font-weight: 500;
+  }
+
+  .nav-buttons {
+    gap: 8px;
+  }
+
+  .dropdown-menu {
+    padding: 4px 0 !important;
+  }
+
+  .dropdown-menu li>hr {
+    margin: 4px 0;
+  }
+
+  .dropdown-menu .dropdown-item {
+    font-size: 0.9em;
+    padding: 2px 12px;
+  }
+
+  .nav-buttons .dropdown-menu {
+    min-width: 8em !important;
+  }
+
+  .account-btn {
+    padding-right: 3px;
+    padding-left: 12px;
+  }
+
+  .account-btn>div {
+    font-size: 0.9em;
+  }
+
+  .account-btn>svg:first-of-type {
+    display: none;
+  }
+
+  .account-btn>svg {
+    font-size: 1.4em;
+  }
+
+  .cart-link svg {
+    font-size: 2em;
+  }
+
+  .cart-count {
+    top: -4px;
+    right: -7px;
+    font-size: 9px;
+    height: 15px;
+    width: 15px;
+  }
+
+}

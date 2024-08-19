@@ -1,0 +1,15 @@
+.error-container {
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-container>div {
+  border: 1px solid #d9d9d9;
+  padding: 30px;
+}
+
+.error-container div p>a {
+  text-decoration: none;
+  font-weight: 500;
+}
