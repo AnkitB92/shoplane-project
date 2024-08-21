@@ -8,13 +8,15 @@
   width: 100%;
   margin-top: 10px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .img-container>img {
   padding-left: 15px;
   padding-right: 15px;
   height: 100%;
-  width: 100%;
+  width: 200px;
   object-fit: contain;
   object-position: center;
 }
